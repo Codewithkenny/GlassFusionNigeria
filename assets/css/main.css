@@ -510,7 +510,7 @@ section {
 }
 
 .gallery .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 50px;
   position: relative;
 }
 
@@ -555,10 +555,10 @@ section {
   margin-top: 60px;
   margin-left: 20px;
   margin-right: 20px;
-  padding: 45px 0;
+  padding: 42px 10px;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 2vh;
+  grid-gap: 1.6vh;
   grid-auto-flow: dense;
   background: #161452;
 
