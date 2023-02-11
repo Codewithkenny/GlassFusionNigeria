@@ -553,12 +553,12 @@ section {
   width: auto;
   margin: 0 auto;
   margin-top: 60px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 42px 10px;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 1.6vh;
+  grid-gap: 1.3vh;
   grid-auto-flow: dense;
   background: #161452;
 
