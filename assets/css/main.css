@@ -507,7 +507,7 @@ section {
 # About Section
 --------------------------------------------------------------*/
 
--------------*/ .gallery {
+ .gallery {
   overflow: hidden;
 
 }
@@ -525,7 +525,7 @@ section {
 }
 
 .gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
+  background-color: #161452;
 }
 
 .gallery .swiper-slide-active {
@@ -538,7 +538,7 @@ section {
   }
 
   .gallery .swiper-slide-active {
-    border: 3px solid var(--color-primary);
+    border: 3px solid #161452;
     padding: 4px;
     background: #fff;
     z-index: 1;
@@ -607,22 +607,21 @@ section {
 
  .post {
     position: absolute;
-      top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: #fff;
-      padding: 10px;
-      font-size: 22px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      text-align: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
     }
  
 
 
 /*  Media Query for Grid */
-
-  	@media screen and (max-width: 768px) {
+  	/* @media screen and (max-width: 768px) {
   	  .grid-wrapper {
   	    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   	  }
@@ -655,13 +654,29 @@ section {
   	    grid-row: 6;
   	    grid-column: 1 / span 2;
   	  }
-  	}
+  	} */
 
-
+        @media (min-width: 992px) {
+          .grid-wrapper .swiper-wrapper {
+            padding: 40px 0;
+          }
+    
+          .grid-wrapper .swiper-slide-active {
+            border: 6px solid #161452;
+            padding: 4px;
+            background: #fff;
+            z-index: 1;
+            transform: scale(1.2);
+          }
+        }
+ 
  @media only screen and (max-width: 1024px) {
   .grid-wrapper {
     grid-template-columns: repeat(3, 1fr) ;
   }
+     .grid-wrapper img {
+       margin: 7px auto;
+     }
     
  
 } 
@@ -669,17 +684,36 @@ section {
  @media only screen and (max-width: 768px) {
   .grid-wrapper {
     grid-template-columns: repeat(2, 1fr);
-    margin: 10px;
+  
   }
+     .grid-wrapper img {
+       margin: 7px auto;
+     }
+    
  
  } 
  @media only screen and (max-width: 480px) {
   .grid-wrapper {
-    grid-template-columns: repeat(1, 1fr);
-    margin: 10px;
+    display: block;
+  
   }
+     .grid-wrapper img {
+       margin: 7px auto;
+     }
+    
  
- } 
+ }  
+ @media only screen and (max-width: 320px) {
+  .grid-wrapper {
+    display: block;
+  
+  }
+  .grid-wrapper img {
+    margin: 7px auto;
+  }
+    
+ 
+ }  
 
 /*--------------------------------------------------------------
 # Contact Section
