@@ -56,7 +56,7 @@ h6 {
 --------------------------------------------------------------*/
 section {
   overflow: hidden;
-  padding: 80px 0;
+  padding: 50px 10px;
 }
 
 .section-bg {
@@ -594,16 +594,17 @@ section {
 
 .grid-wrapper .big {
   grid-column: span 2;
-  grid-row: span 3;
+  grid-row: span 5;
   position: relative;
   overflow: hidden;
 }
 .grid-wrapper .half-big {
-  grid-column: span 2;
+  grid-column: span 1;
   grid-row: span 2;
   position: relative;
   overflow: hidden;
 }
+
 
  .post {
     position: absolute;
@@ -617,7 +618,59 @@ section {
     text-transform: uppercase;
     text-align: center;
     }
- 
+
+    .box {
+      width: 250px;
+      height: 200px;
+      background-color: grey;
+    }
+
+    .box h3 {
+      font-size: 22px;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 50px;
+    }
+
+     .box-1 {
+        width: 250px;
+        height: 200px;
+        background-color: #9d94ff;
+        font-size: 35px;
+        text-align: center;
+        padding: 25px;
+     }
+
+      .box-1 h3 {
+        font-size: 22px;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+     .box-2 {
+        width: 250px;
+        height: 200px;
+        background-color: #fff;
+     }
+
+     .box-1 .bi-facebook {
+      color: #000;
+     }
+     .box-1 .bi-twitter {
+      color: #000;
+     }
+     .box-1 .bi-instagram {
+      color: #000;
+     }
+
+    
+
+   
+   
 
 
 /*  Media Query for Grid */
