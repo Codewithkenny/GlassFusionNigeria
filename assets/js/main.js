@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  "use strict";
+  ("use strict");
 
   /**
    * Preloader
@@ -125,17 +125,17 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
-  /**
-   * Initiate glightbox
-   */
-  const glightbox = GLightbox({
-    selector: ".glightbox",
-  });
 
-  /**
-   * Initiate pURE cOUNTER
-   */
-  new PureCounter();
+//  const glightbox = Glightbox({
+//     selector: ".glightbox",
+//   });
+
+//   /**
+//    * Initiate pURE cOUNTER
+//    */
+//   new PureCounter();
+
+
 
   /**
    * Init swiper slider with 1 slide at once in desktop view
