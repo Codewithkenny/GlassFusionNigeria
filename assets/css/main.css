@@ -240,6 +240,57 @@ section {
   scroll-margin-top: 90px;
 }
 
+
+/*--------------------------------------------------------------
+# Video
+--------------------------------------------------------------*/
+
+/* custom-video-styles.css */
+
+/* Apply the linear gradient background to the entire body */
+body {
+  background: linear-gradient(90deg, rgba(128, 128, 133, 1) 0%, rgba(36, 36, 157, 1) 50%, rgba(4, 4, 197, 1) 100%);
+  
+  
+}
+
+/* Styles for the video container */
+.video-container {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10rem;
+  padding: 20px;
+  background-color: #000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles for the video element */
+.custom-video video {
+  width: 100%;
+  display: block;
+}
+
+/* Styles for captions or subtitles */
+.custom-video::cue {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Styles for the video controls */
+.custom-video::cue-button {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  border-radius: 50%;
+  margin: 5px;
+  padding: 5px;
+}
+
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
@@ -579,7 +630,7 @@ section {
 }
 
 .grid-wrapper .wide {
-  grid-column: span 3;
+  grid-column: span 4;
   grid-row: span 2;
   position: relative;
   overflow: hidden;
@@ -594,13 +645,25 @@ section {
 
 .grid-wrapper .big {
   grid-column: span 2;
-  grid-row: span 5;
+  grid-row: span 6;
   position: relative;
   overflow: hidden;
 }
 .grid-wrapper .half-big {
   grid-column: span 1;
   grid-row: span 3;
+  position: relative;
+  overflow: hidden;
+}
+.grid-wrapper .small {
+  grid-column: span 2;
+  grid-row: span 2;
+  position: relative;
+  overflow: hidden;
+}
+.grid-wrapper .smaller {
+  grid-column: span 1;
+  grid-row: span 2;
   position: relative;
   overflow: hidden;
 }
@@ -995,3 +1058,53 @@ section {
     display: block;
   }
 }
+
+
+
+
+/* swiper-styles.css */
+
+/* Custom styles for the Swiper container */
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Custom styles for individual Swiper slides */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  background: #333;
+  color: #fff;
+}
+
+/* Custom styles for Swiper pagination */
+.swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Custom styles for Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* Adjust the styles for the active slide */
+.swiper-slide-active {
+  background: #007bff;
+}
+
+/* Add your custom styles for other Swiper elements as needed */
