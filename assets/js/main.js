@@ -135,6 +135,11 @@ document.addEventListener("DOMContentLoaded", () => {
 //    */
 //   new PureCounter();
 
+const lightbox = GLightbox({
+  selector: ".glightbox",
+  closeButton: true, // Ensure this option is set to true
+  // Other options here
+});
 
 
   /**
