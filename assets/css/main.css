@@ -661,12 +661,13 @@ body {
   position: relative;
   overflow: hidden;
 }
-.grid-wrapper .smaller {
-  grid-column: span 1;
+.grid-wrapper .one {
+  grid-column: span 2;
   grid-row: span 2;
   position: relative;
   overflow: hidden;
 }
+
 
 
  .post {
